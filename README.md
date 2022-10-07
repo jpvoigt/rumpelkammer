@@ -1,3 +1,4 @@
 # rumpelkammer
 Für Tests z.B. mit Octokit
-segasdg
+
+Diese Datei habe ich mit Octokit aktualisiert. Wichtig ist dafür, alle nötigen Scipes zu aktivieren: 'repo', 'workflow'
