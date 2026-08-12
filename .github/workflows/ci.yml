@@ -19,4 +19,4 @@ jobs:
           message: "Aus dem Workflow übergeben"
 
       - name: Ergebnis anzeigen
-        run: echo "Ergebnis ${{ steps.python-action.outputs.result }}"
+        run: echo "Ergebnis ${{ steps.python-action.outputs.message }}"
