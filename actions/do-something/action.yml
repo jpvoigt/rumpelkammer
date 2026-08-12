@@ -5,6 +5,9 @@ inputs:
   python-version:
     required: false
     default: "3.14"
+  message:
+    required: true
+    description: "Nachricht, die an das Python-Skript übergeben wird"
 
 outputs:
   result:
