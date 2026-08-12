@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  run-python-action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python Action ausführen
+        id: python-action
+        uses: ./actions/do-something
+        with:
+          message: "Aus dem Workflow übergeben"
+
+      - name: Ergebnis anzeigen
+        run: echo "Ergebnis: ${{ steps.python-action.outputs.result }}"
